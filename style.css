@@ -110,7 +110,7 @@
 .container-banner{
     width: 90%;
     height: 300px;
-    margin-top: 250px;
+    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -137,6 +137,13 @@
     font-weight: bold;
     padding-left: 32px;
 
+}
+.grid-item .name-produk{
+    font-size: 14px; 
+    color: #0a0000; 
+    font-weight: bold;
+    margin-bottom: 4px;
+    text-align: center;
 }
 .grid-container {
     display: grid;
@@ -181,15 +188,11 @@
 .price {
     font-weight: bold;
     margin-top: 8px;
+    
 }
-.location p{
+.grid-item .location {
     font-weight: bold;
-    margin-top: 8px;
-}
-.grid-item p{
-    font-size: 12px; 
-    color: #666; 
-    font-weight: bold;
+    color: #4c2222;
 }
     
 /* style closing */
@@ -278,4 +281,204 @@ hr {
     position: absolute; 
     width: 100%; 
     top: 0; 
+}
+@media only screen and (max-width: 480px) {
+    /* Style navigasi */  
+    .main-header{
+        position: static;
+    }
+    .container-one {
+        grid-template-columns: 1fr; 
+    }
+    .container-one nav{
+        font-size: 9px;
+    }
+    .container-one nav a{
+        display: block;
+        padding: 2px;
+    }
+
+    .container-two {
+        grid-template-columns: 1fr; 
+        height: auto; 
+        margin-bottom: 50px; 
+        background-color: white;
+        position: static;
+    }
+
+    .search input[type="text"] {
+        width: 40%; 
+        margin-right: 0; 
+    }
+
+    .search button {
+        width: 20%; 
+    }
+    .logo-tokped {
+    margin:auto;
+    }
+    .logo-tokped  img{
+        width: 100px;
+        height: 30px;
+    }
+
+    /* Style banner */
+    .container-banner {
+        margin-top: 100px; 
+    }
+    /* style kategori produk */
+    .container-produk h1 {
+        margin-top: auto; 
+        padding-left: 16px; 
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+        width: 90%; 
+        margin: auto; 
+    }
+
+    .grid-item {
+        margin-top: 8px;
+        padding: 12px; 
+    }
+
+    .grid-item img {
+        max-width: 80%; 
+        margin-bottom: 10px; 
+    }
+
+    .name-produk {
+        font-size: 12px; 
+        margin-bottom: 2px; 
+    }
+
+    .price {
+        font-size: 10px;
+        margin-top: 4px; 
+    }
+
+    .location {
+        font-size: 10px; 
+    }
+/* style closing */
+.container-closing {
+    margin-top: 3400px; 
+    padding-left: 16px; 
+    padding-right: 16px; 
+}
+
+h3 {
+    padding-top: 16px;
+}
+
+.benefit {
+    grid-template-columns: 1fr; 
+    margin-top: 16px; 
+}
+
+.benefit img {
+    width: 100%; 
+    height: auto; 
+    float: none;
+    padding-right: 0; 
+    margin-bottom: 10px; 
+}
+
+.benefit h4 {
+    margin-top: 12px; 
+    text-align: center; 
+}
+
+.benefit p {
+    text-align: center; 
+}
+
+.clear {
+    display: none; 
+}
+/* style footer */
+.main-footer {
+    display: block; 
+    margin-top: 50px; 
+    margin-left: 16px; 
+    margin-right: 16px; 
+}
+
+.footer {
+    padding: 10px; 
+}
+
+.footer h4 {
+    margin-bottom: 8px; 
+}
+
+.footer p {
+    margin: 3px 0; 
+}
+
+.footer img {
+    width: 60px; 
+    height: auto; 
+}
+
+.download img {
+    width: 80px;
+    height: auto; 
+    padding-left: 8px;
+}
+
+.copyright {
+    text-align: center; 
+}
+
+hr {
+    position: static; 
+}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    /* Style navigasi */
+    .container-one nav {
+        font-size: 12px; 
+    }
+    .container-one .right-nav a{
+        padding: 2px;
+    }
+
+    .container-two {
+        margin-bottom: 30px; 
+
+    .search input[type="text"] {
+        width: 50%; 
+    }
+
+    .logo-tokped img {
+        width: 120px; 
+        height: 40px; 
+    }
+
+    /* Style banner */
+    .container-banner {
+        margin-top: 120px; 
+    }
+
+    /* style kategori produk */
+    .container-produk h1 {
+        padding-left: 32px; 
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    /* style closing */
+    .container-closing {
+        margin-top: 2500px; 
+    }
+
+    /* style footer */
+    .main-footer {
+        margin-top: 100px;
+    }
 }
